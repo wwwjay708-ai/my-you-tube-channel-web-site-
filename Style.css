@@ -1,0 +1,631 @@
+/* Global Reset & Dark Background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background: #1f1f1f;
+  padding: 40px 20px;
+}
+
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin: 30px 15px;
+
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #272727;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    width: 140px;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+.stat-box {
+  background-color: #272727;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+/* Video Card Grid Layout */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  background: #1f1f1f;
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card a {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+                     }
+
+/* Logo Size & Circle Style */
+.logo-profile{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  margin-top: 30px;
+  margin-right: 25px;
+  margin-bottom: 10px;}
+  
+  /* Container ko flex banayein */
+.channel-header {
+    display: flex;
+    align-items: center;
+ /* Logo aur Text ko center me align karega*/
+    gap: 20px;
+    /* Logo aur Text ke beech thodi jagah */
+    margin-bottom: 20px;
+                       }
+
+/* Logo ka size fix karein */
+.logo-profile {
+    width: 100px;       
+  /* Yahan size kam zyada kar sakte hain */
+    height: 100px;
+    border-radius: 50%;  
+    /* Gol shape ke liye */
+    object-fit: cover;   
+    /* Image ko crop hone se bachayega */
+    border: 2px solid #fff;
+                           }
+
+/* Text ko adjust karein */
+.channel-info h1 {
+    margin: 0;
+    font-size: 24px;}
+    
+.channel-info p {
+    margin: 5px 0 0 0;
+    color: #ccc;
+               }
+               
+  /* =========================
+   PROFESSIONAL HEADER
+========================= */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111111;
+
+    padding: 15px 30px;
+
+    border-bottom: 1px solid #333;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+/* Logo / Brand */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: white;
+
+    white-space: nowrap;
+}
+
+.youtube-icon {
+    background: red;
+
+    color: white;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+/* Navigation */
+
+.nav-menu {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: red;
+}
+
+/* Search + Subscribe */
+
+.header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+#searchInput {
+    width: 180px;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #252525;
+
+    color: white;
+
+    outline: none;
+}
+
+.subscribe-btn {
+    background: red;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background: #cc0000;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .header-actions {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    #searchInput {
+        width: 50%;
+    }
+
+    .subscribe-btn {
+        padding: 10px 14px;
+    }
+    
+    @media (max-width: 768px) {
+
+    .hero {
+        min-height: 250px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+
+  /* =========================
+   CHANNEL PROFILE
+========================= */
+
+.channel-profile {
+    text-align: center;
+    background: #151515;
+
+    padding: 35px 20px;
+
+    border-bottom: 1px solid #333;
+}
+
+.logo-profile {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid white;
+
+    display: block;
+
+    margin: 0 auto 15px;
+}
+
+.channel-profile h1 {
+    margin: 5px 0;
+
+    font-size: 28px;
+
+    color: white;
+}
+
+.channel-handle {
+    color: #aaa;
+
+    margin: 8px 0;
+}
+
+.channel-profile p {
+    color: #ccc;
+
+    font-size: 16px;
+}
+
+.profile-subscribe {
+    background: red;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.profile-subscribe:hover {
+    background: #cc0000;
+}
+
+@media (max-width: 768px) {
+
+    .channel-profile {
+        padding: 30px 15px;
+    }
+
+    .logo-profile {
+        width: 75px;
+        height: 75px;
+    }
+
+    .channel-profile h1 {
+        font-size: 25px;
+    }
+}
+
+.hero-banner {
+    min-height: 260px;
+    margin: 0;
+    background: linear-gradient(135deg, #151515, #2a0a0a, #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.hero-content h1 span {
+    color: red;
+}
+
+.hero-content p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 10px 0 20px;
+}
+
+.hero-content button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .hero-banner {
+        min-height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .hero-content button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+.latest-videos {
+    padding: 40px 5%;
+    border-top: 1px solid #333;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.section-title button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.video-card {
+    background: #1d1d1d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.video-card h3 {
+    font-size: 17px;
+    margin: 12px;
+}
+
+.video-card p {
+    color: #aaa;
+    margin: 0 12px 15px;
+    font-size: 14px;
+}
+
+.video-card a {
+    display: inline-block;
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 9px 14px;
+    margin: 0 12px 15px;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+
+    .latest-videos {
+        padding: 30px 15px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-card img {
+        height: auto;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+}
+  
+.about-section {
+    padding: 50px 8%;
+    text-align: center;
+    background: #151515;
+    border-top: 1px solid #333;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #bbb;
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* =========================
+   SHORTS SECTION
+========================= */
+
+.shorts-section {
+    padding: 40px 5%;
+    background: #101010;
+    border-top: 1px solid #333;
+}
+
+.shorts-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.short-card {
+    background: #1d1d1d;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.short-card:hover {
+    transform: translateY(-5px);
+}
+
+.short-card img {
+    width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.short-card h3 {
+    font-size: 16px;
+
+    margin: 12px;
+}
+
+.short-card p {
+    color: #aaa;
+
+    margin: 0 12px 15px;
+
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .shorts-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .short-card h3 {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
